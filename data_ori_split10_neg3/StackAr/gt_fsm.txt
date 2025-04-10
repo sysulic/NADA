@@ -1,0 +1,48 @@
+1
+S0
+6
+S1
+S2
+S3
+S4
+S5
+S6
+37
+S0	S2	StackAr
+S0	S4	StackAr
+S0	S5	StackAr
+S2	S2	topAndPop
+S2	S2	isFull:FALSE
+S2	S2	top
+S2	S1	push
+S2	S2	makeEmpty
+S2	S2	isEmpty:TRUE
+S4	S4	topAndPop
+S4	S4	top
+S4	S4	isFull:TRUE
+S4	S4	makeEmpty
+S4	S4	isEmpty:TRUE
+S1	S1	topAndPop
+S1	S2	topAndPop
+S1	S1	isFull:FALSE
+S1	S1	top
+S1	S1	push
+S1	S3	push
+S1	S2	makeEmpty
+S1	S1	isEmpty:FALSE
+S3	S1	topAndPop
+S3	S3	top
+S3	S3	isFull:TRUE
+S3	S2	makeEmpty
+S3	S3	isEmpty:FALSE
+S5	S5	topAndPop
+S5	S5	isFull:FALSE
+S5	S5	top
+S5	S6	push
+S5	S5	makeEmpty
+S5	S5	isEmpty:TRUE
+S6	S5	topAndPop
+S6	S6	top
+S6	S6	isFull:TRUE
+S6	S5	makeEmpty
+S6	S6	isEmpty:FALSE
