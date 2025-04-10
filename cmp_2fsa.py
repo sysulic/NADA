@@ -232,10 +232,10 @@ if __name__ == '__main__':
     
     for dataset in datasets:
         if args.init:
-            TP1,TP2,fsm1_traces_pos,fsm2_traces_pos=cmp_2fsas(f'model/init/valk{args.val_k}/{dataset}/init_fsa.txt',f'data_ori/{dataset}/gt_fsm.txt',args.test_case, args=args)
+            TP1,TP2,fsm1_traces_pos,fsm2_traces_pos=cmp_2fsas(f'model/init/valk{args.val_k}/{dataset}/init_fsa.txt',f'data_ori_split10_neg3/{dataset}/gt_fsm.txt',args.test_case, args=args)
         elif args.init_postprocess:
-            TP1,TP2,fsm1_traces_pos,fsm2_traces_pos=cmp_2fsas(f'model/init_postprocess/valk{args.val_k}/{dataset}/init_fsa.txt',f'data_ori/{dataset}/gt_fsm.txt',args.test_case, args=args)
+            TP1,TP2,fsm1_traces_pos,fsm2_traces_pos=cmp_2fsas(f'model/init_postprocess/valk{args.val_k}/{dataset}/init_fsa.txt',f'data_ori_split10_neg3/{dataset}/gt_fsm.txt',args.test_case, args=args)
         else:
-            TP1,TP2,fsm1_traces_pos,fsm2_traces_pos=cmp_2fsas(f'model/{args.tag}/{dataset}/final_fsa.txt',f'data_ori/{dataset}/gt_fsm.txt',args.test_case, args=args)
+            TP1,TP2,fsm1_traces_pos,fsm2_traces_pos=cmp_2fsas(f'model/{args.tag}/{dataset}/final_fsa.txt',f'data_ori_split10_neg3/{dataset}/gt_fsm.txt',args.test_case, args=args)
         n1, n2 = len(fsm1_traces_pos), len(fsm2_traces_pos)
         print(dataset,TP1,TP2,n1,n2)

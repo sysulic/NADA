@@ -195,7 +195,7 @@ def one_train(dataset,train_args):
 
     if train_args.data_dir.find("data_event") == -1:
         start_time = time.time()
-        gt_path = f'data_ori/{dataset}/gt_fsm.txt'
+        gt_path = f'data_ori_split10_neg3/{dataset}/gt_fsm.txt'
         pos_name = 'input.json'
         if train_args.data_dir.find("data_synthesis") != -1:
             gt_path = f'data_synthesis/{dataset}/gt_fsm.txt'

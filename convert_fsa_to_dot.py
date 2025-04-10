@@ -153,7 +153,7 @@ if __name__ == '__main__':
       if args.data_synthesis:
         gt_fsa = FSM(Path(f'data_synthesis/{dataset}/gt_fsm.txt'))
       else:
-        gt_fsa = FSM(Path(f'data_ori/{dataset}/gt_fsm.txt'))
+        gt_fsa = FSM(Path(f'data_ori_split10_neg3/{dataset}/gt_fsm.txt'))
       gt_dot = fsm2dot(gt_fsa)
       gt_dir = dot_path / 'gt'
       gt_path = gt_dir / f'{dataset}_gt_fsm.dot'
